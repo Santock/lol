@@ -18,7 +18,7 @@ window.nzxt = {
         onMonitoringDataUpdate: (data) => {
             const { cpus, gpus, ram } = data // https://github.com/NZXTCorp/web-integrations-types/blob/main/v1/index.d.ts
             update_cpu(cpus[0].temperature)
-            update_gpu(gpus[0].temperature)
+            update_gpu(gpus[1].temperature)
         }
     }
 }
